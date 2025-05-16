@@ -1,0 +1,215 @@
+:root {
+        --primary-color: #ff6b82;
+        --text-color: #222;
+        --light-gray: #c8c8c8;
+        --background-light: #fff7f7;
+        --text-gray: #555;
+        --text-light-gray: #999;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #fff;
+        color: var(--text-color);
+      }
+
+      .container {
+        max-width: 550px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        padding: 20px 50px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .header-line {
+        flex: 1;
+        height: 1px;
+        background: var(--light-gray);
+        border-radius: 1px;
+      }
+
+      h2 {
+        margin: 0;
+        color: var(--primary-color);
+        font-size: 1.5rem;
+      }
+
+      .bundle-option {
+        border: 1px solid #ccc;
+        padding: 15px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        position: relative;
+      }
+
+      .bundle-option.selected {
+        border-color: var(--primary-color);
+        background: var(--background-light);
+      }
+
+      .bundle-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+      }
+
+      .bundle-header input[type="radio"] {
+        margin-top: 4px;
+      }
+
+      .bundle-info {
+        flex: 1;
+      }
+
+      .unit-row {
+        display: grid;
+        grid-template-columns: 50px 80px auto;
+        gap: 10px;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      .unit-row .discount {
+        text-align: start;
+        background: var(--primary-color);
+        color: #fff;
+        font-size: 0.8rem;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+
+      .price {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: end;
+      }
+
+      .price-row {
+        display: flex;
+        justify-content: space-between;
+      }
+      .standard-price {
+        margin: 5px 0;
+        font-size: 0.85rem;
+        color: var(--text-gray);
+      }
+
+      .price-row .strike {
+        text-decoration: line-through;
+        color: var(--text-light-gray);
+        font-size: 0.85rem;
+        margin: 5px 0;
+      }
+
+      .most-popular {
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        background: var(--primary-color);
+        color: #fff;
+        font-size: 0.75rem;
+        padding: 2px 6px;
+        border-radius: 4px;
+      }
+
+      .variants {
+        margin-top: 15px;
+        display: none;
+      }
+
+      .variants > div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 10px;
+      }
+
+      .variants span {
+        width: 30px;
+      }
+
+      .variants label {
+        font-size: 0.85rem;
+        margin-right: 4px;
+      }
+
+      .variants select {
+        padding: 4px;
+      }
+
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+      }
+
+      .footer {
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
+
+      .total {
+        font-weight: bold;
+        font-size: 1rem;
+      }
+
+      .add-to-cart {
+        width: 100%;
+        background: var(--primary-color);
+        color: #fff;
+        padding: 12px;
+        margin-top: 15px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .add-to-cart:hover {
+        background: #f96077;
+      }
+
+      .powered {
+        text-align: right;
+        font-size: 0.75rem;
+        color: #777;
+        margin-top: 10px;
+      }
+
+      @media (max-width: 480px) {
+        .bundle-header {
+          flex-direction: column;
+        }
+
+        .unit-row,
+        .price-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .unit-row .discount {
+          margin-top: 4px;
+        }
+      }

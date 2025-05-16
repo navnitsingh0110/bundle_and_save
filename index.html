@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bundle & Save</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-line"></div>
+        <h2>YAY! It's BOGO</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="bundle-option" data-bundle-id="1">
+        <label for="bundle1" class="bundle-header">
+          <input type="radio" name="bundle" id="bundle1" />
+          <div class="bundle-info">
+            <div class="unit-row">
+              <span>1 Unit</span>
+              <span class="discount">10% OFF</span>
+              <span class="price">$18.00 USD</span>
+            </div>
+            <div class="price-row">
+              <p class="standard-price">Standard Price</p>
+              <span class="strike">$20.00 USD</span>
+            </div>
+          </div>
+        </label>
+        <div class="variants" id="variants1">
+          <div>
+            <span>#1</span>
+            <label for="size1">Size</label>
+            <select id="size1">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color1">Color</label>
+            <select id="color1">
+              <option disabled selected>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bundle-option" data-bundle-id="2">
+        <label for="bundle2" class="bundle-header">
+          <input type="radio" name="bundle" id="bundle2" />
+          <div class="bundle-info">
+            <div class="unit-row">
+              <span>2 Unit</span>
+              <span class="discount">20% OFF</span>
+              <span class="price">$32.00 USD</span>
+            </div>
+            <div class="price-row">
+              <span></span>
+              <span class="strike">$40.00 USD</span>
+            </div>
+          </div>
+          <div class="most-popular">Most Popular</div>
+        </label>
+        <div class="variants" id="variants2">
+          <div>
+            <span>#1</span>
+            <label for="size2a">Size</label>
+            <select id="size2a">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color2a">Color</label>
+            <select id="color2a">
+              <option disabled selected>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div>
+            <span>#2</span>
+            <label for="size2b">Size</label>
+            <select id="size2b">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color2b">Color</label>
+            <select id="color2b">
+              <option disabled selected>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="bundle-option" data-bundle-id="3">
+        <label for="bundle3" class="bundle-header">
+          <input type="radio" name="bundle" id="bundle3" />
+          <div class="bundle-info">
+            <div class="unit-row">
+              <span>3 Unit</span>
+              <span class="discount">30% OFF</span>
+              <span class="price">$42.00 USD</span>
+            </div>
+            <div class="price-row">
+              <span></span>
+              <span class="strike">$60.00 USD</span>
+            </div>
+          </div>
+        </label>
+        <div class="variants" id="variants3">
+          <div>
+            <span>#1</span>
+            <label for="size3a">Size</label>
+            <select id="size3a">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color3a">Color</label>
+            <select id="color3a">
+              <option disabled selected>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div>
+            <span>#2</span>
+            <label for="size3b">Size</label>
+            <select id="size3b">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color3b">Color</label>
+            <select id="color3b">
+              <option disabled selected>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div>
+            <span>#3</span>
+            <label for="size3c">Size</label>
+            <select id="size3c">
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <label for="color3c">Color</label>
+            <select id="color3c">
+              <option disabled selected>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer">Free Delivery</div>
+        <div class="total">Total: <span id="total">$18.00 USD</span></div>
+      </div>
+      <button class="add-to-cart">+ Add to Cart</button>
+      <div class="powered">© Powered by Pumper</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
